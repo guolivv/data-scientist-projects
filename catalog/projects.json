@@ -1,0 +1,2654 @@
+[
+  {
+    "numero": 1,
+    "slug": "leitura-tabular",
+    "titulo": "Leitura tabular com pandas",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/001-leitura-tabular",
+    "problema": "Planilha de vendas chega como CSV e ninguém confere linhas, tipos e encoding.",
+    "objetivo_aprendizagem": "Ler um CSV de vendas, inspecionar shape, colunas e tipos e gravar um perfil da carga.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "leitura tabular",
+      "schema",
+      "perfil de carga"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Conferir o extract diário de PDV antes de qualquer análise.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": null,
+    "status": "validado"
+  },
+  {
+    "numero": 2,
+    "slug": "tipos-e-conversao",
+    "titulo": "Tipos e conversão de colunas",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/002-tipos-e-conversao",
+    "problema": "Receita, data e quantidade vieram como texto e as somas ficam erradas.",
+    "objetivo_aprendizagem": "Converter colunas para numérico e data, registrar falhas de coerção e republicar o dataset.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "dtype",
+      "coerção",
+      "parse de data"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Preparar export de ERP para um notebook de previsão.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 1,
+    "status": "validado"
+  },
+  {
+    "numero": 3,
+    "slug": "valores-ausentes",
+    "titulo": "Valores ausentes",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/003-valores-ausentes",
+    "problema": "Cadastro de clientes tem nulos em renda, cidade e data de adesão.",
+    "objetivo_aprendizagem": "Medir ausência por coluna, escolher imputação ou exclusão e documentar o impacto no n.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "missing",
+      "imputação",
+      "viés de exclusão"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Limpar base de CRM antes de um modelo de propensão.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 2,
+    "status": "validado"
+  },
+  {
+    "numero": 4,
+    "slug": "outliers-e-iqr",
+    "titulo": "Outliers e IQR",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/004-outliers-e-iqr",
+    "problema": "Ticket médio explode por alguns pedidos com valor absurdo.",
+    "objetivo_aprendizagem": "Detectar outliers pelo IQR, winsorizar e comparar médias antes e depois.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "IQR",
+      "winsorização",
+      "robustez"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Estabilizar KPI de ticket em e-commerce com pedidos-teste.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 2,
+    "status": "validado"
+  },
+  {
+    "numero": 5,
+    "slug": "datas-e-periodos",
+    "titulo": "Datas e períodos",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/005-datas-e-periodos",
+    "problema": "A série de pedidos mistura fuso, string e datetime e o mês fecha errado.",
+    "objetivo_aprendizagem": "Normalizar datas, derivar ano, mês, semana e dia da semana e agregar por período.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "datetime",
+      "features de calendário",
+      "agregação temporal"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Fechar receita mensal de uma operação nacional.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 2,
+    "status": "validado"
+  },
+  {
+    "numero": 6,
+    "slug": "juncao-de-tabelas",
+    "titulo": "Junção de tabelas",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/006-juncao-de-tabelas",
+    "problema": "Pedidos e clientes vivem em arquivos separados e a análise precisa dos dois.",
+    "objetivo_aprendizagem": "Unir pedidos e clientes, medir match rate e isolar órfãos.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "join",
+      "chaves",
+      "órfãos"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Montar base analítica de varejo a partir de extratos do ERP.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 1,
+    "status": "validado"
+  },
+  {
+    "numero": 7,
+    "slug": "agrupamentos-e-kpis",
+    "titulo": "Agrupamentos e KPIs",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/007-agrupamentos-e-kpis",
+    "problema": "A diretoria pede receita, ticket e pedidos por categoria e canal.",
+    "objetivo_aprendizagem": "Agregar métricas de negócio por dimensões e gravar uma tabela de KPIs.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "groupby",
+      "KPI",
+      "ticket médio"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Painel semanal de gôndola e canal.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 6,
+    "status": "validado"
+  },
+  {
+    "numero": 8,
+    "slug": "dados-sinteticos-controlados",
+    "titulo": "Dados sintéticos controlados",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/008-dados-sinteticos-controlados",
+    "problema": "Não há base real e o time precisa de um dataset com propriedades conhecidas.",
+    "objetivo_aprendizagem": "Gerar dados sintéticos com seed, correlação e taxa de nulos configuráveis.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "dados sintéticos",
+      "seed",
+      "correlação induzida"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Prototipar um modelo de crédito sem usar dado pessoal.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 1,
+    "status": "validado"
+  },
+  {
+    "numero": 9,
+    "slug": "reprodutibilidade-com-seed",
+    "titulo": "Reprodutibilidade com seed",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/009-reprodutibilidade-com-seed",
+    "problema": "O mesmo notebook gera números diferentes a cada execução.",
+    "objetivo_aprendizagem": "Fixar seed, hashear a saída e provar que duas execuções coincidem.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "reprodutibilidade",
+      "seed",
+      "hash de artefato"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Auditoria de um relatório mensal de ciência de dados.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 8,
+    "status": "validado"
+  },
+  {
+    "numero": 10,
+    "slug": "perfil-estatistico",
+    "titulo": "Perfil estatístico de dataset",
+    "nivel": "basico",
+    "categoria": "01-fundamentos",
+    "caminho": "01-fundamentos/010-perfil-estatistico",
+    "problema": "Ninguém sabe assimetria, cardinalidade e intervalo das colunas.",
+    "objetivo_aprendizagem": "Calcular descritivas, assimetria, nulos e nunique e publicar um perfil.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "describe",
+      "assimetria",
+      "cardinalidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Aceitar um dataset novo de marketing antes de modelar.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 3,
+    "status": "validado"
+  },
+  {
+    "numero": 11,
+    "slug": "distribuicoes-univariadas",
+    "titulo": "Distribuições univariadas",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/011-distribuicoes-univariadas",
+    "problema": "O time discute média de ticket sem olhar a forma da distribuição.",
+    "objetivo_aprendizagem": "Calcular média, mediana, assimetria e quantis e exportar um histograma.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "matplotlib",
+      "pytest"
+    ],
+    "conceitos": [
+      "distribuição",
+      "quantis",
+      "histograma"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Entender ticket de um marketplace antes de definir meta.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 10,
+    "status": "validado"
+  },
+  {
+    "numero": 12,
+    "slug": "correlacao-e-heatmap",
+    "titulo": "Correlação e heatmap",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/012-correlacao-e-heatmap",
+    "problema": "Há dezenas de colunas numéricas e ninguém vê colinearidade.",
+    "objetivo_aprendizagem": "Calcular Pearson e Spearman e gravar a matriz e um heatmap.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "matplotlib",
+      "pytest"
+    ],
+    "conceitos": [
+      "Pearson",
+      "Spearman",
+      "colinearidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Selecionar variáveis de um modelo de preço imobiliário.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 11,
+    "status": "validado"
+  },
+  {
+    "numero": 13,
+    "slug": "analise-bivariada",
+    "titulo": "Análise bivariada",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/013-analise-bivariada",
+    "problema": "A pergunta é se clientes premium compram mais, e só existe feeling.",
+    "objetivo_aprendizagem": "Cruzar uma variável numérica com uma categórica e comparar grupos.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "matplotlib",
+      "pytest"
+    ],
+    "conceitos": [
+      "bivariada",
+      "box plot",
+      "diferença de médias"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Comparar gasto de segmentos de um clube de assinatura.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 11,
+    "status": "validado"
+  },
+  {
+    "numero": 14,
+    "slug": "tabelas-de-frequencia",
+    "titulo": "Tabelas de frequência",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/014-tabelas-de-frequencia",
+    "problema": "Canais e UFs se repetem e a participação de cada um não está clara.",
+    "objetivo_aprendizagem": "Montar frequências, proporções e acumulado de categorias.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "frequência",
+      "proporção",
+      "acumulado"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Priorizar praças de uma campanha regional.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 7,
+    "status": "validado"
+  },
+  {
+    "numero": 15,
+    "slug": "pareto-e-concentracao",
+    "titulo": "Pareto e concentração",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/015-pareto-e-concentracao",
+    "problema": "A receita parece concentrada em poucos SKUs, mas isso nunca foi medido.",
+    "objetivo_aprendizagem": "Ordenar contribuição, calcular acumulado e marcar o corte 80/20.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "matplotlib",
+      "pytest"
+    ],
+    "conceitos": [
+      "Pareto",
+      "concentração",
+      "80/20"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Gestão de sortimento em varejo.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 14,
+    "status": "validado"
+  },
+  {
+    "numero": 16,
+    "slug": "comparacao-de-grupos",
+    "titulo": "Comparação de grupos",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/016-comparacao-de-grupos",
+    "problema": "Marketing quer saber se o canal pago converte diferente do orgânico.",
+    "objetivo_aprendizagem": "Comparar taxas e médias entre grupos com n, desvio e intervalo ingênuo.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "comparação de grupos",
+      "taxa",
+      "intervalo ingênuo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Leitura rápida de canais antes de um teste A/B formal.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 13,
+    "status": "validado"
+  },
+  {
+    "numero": 17,
+    "slug": "mapa-de-ausencia",
+    "titulo": "Mapa de ausência",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/017-mapa-de-ausencia",
+    "problema": "Nulos não são aleatórios: renda falta mais em uma praça.",
+    "objetivo_aprendizagem": "Medir missing por coluna e por grupo e testar associação simples.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "missingness",
+      "MNAR",
+      "associação"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Diagnosticar cadastro de crédito com campos opcionais.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 3,
+    "status": "validado"
+  },
+  {
+    "numero": 18,
+    "slug": "relatorio-eda-markdown",
+    "titulo": "Relatório de EDA em Markdown",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/018-relatorio-eda-markdown",
+    "problema": "A exploração fica presa no notebook e ninguém herda o achado.",
+    "objetivo_aprendizagem": "Gerar um relatório Markdown com perfil, riscos e gráficos referenciados.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "matplotlib",
+      "pytest"
+    ],
+    "conceitos": [
+      "relatório",
+      "EDA reproduzível",
+      "comunicação"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Handoff de um dataset novo para o time de modelagem.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 10,
+    "status": "validado"
+  },
+  {
+    "numero": 19,
+    "slug": "kpis-de-produto",
+    "titulo": "KPIs de produto",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/019-kpis-de-produto",
+    "problema": "Produto pede conversão, retenção D7 e ticket e cada um calcula diferente.",
+    "objetivo_aprendizagem": "Calcular um conjunto fechado de KPIs de produto com definições explícitas.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "KPI",
+      "conversão",
+      "retenção"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Ritual semanal de um app de delivery.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 7,
+    "status": "validado"
+  },
+  {
+    "numero": 20,
+    "slug": "visualizacoes-exportadas",
+    "titulo": "Visualizações exportadas",
+    "nivel": "basico",
+    "categoria": "02-analise-exploratoria",
+    "caminho": "02-analise-exploratoria/020-visualizacoes-exportadas",
+    "problema": "Os gráficos só existem na sessão do analista.",
+    "objetivo_aprendizagem": "Exportar um pacote de figuras PNG com títulos e eixos legíveis.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "matplotlib",
+      "pytest"
+    ],
+    "conceitos": [
+      "visualização",
+      "exportação",
+      "storytelling"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Anexo visual de um QBR de dados.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 11,
+    "status": "validado"
+  },
+  {
+    "numero": 21,
+    "slug": "carga-csv-sqlite",
+    "titulo": "Carga de CSV no SQLite",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/021-carga-csv-sqlite",
+    "problema": "Analistas precisam consultar vendas em SQL sem servidor.",
+    "objetivo_aprendizagem": "Carregar CSV em SQLite, criar índice simples e responder uma pergunta de receita.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "SQLite",
+      "carga",
+      "consulta"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Habilitar SQL local sobre o extract de vendas.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 1,
+    "status": "validado"
+  },
+  {
+    "numero": 22,
+    "slug": "sql-analitico-de-vendas",
+    "titulo": "SQL analítico de vendas",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/022-sql-analitico-de-vendas",
+    "problema": "As perguntas de ranking, ticket e mix não cabem em um groupby solto.",
+    "objetivo_aprendizagem": "Escrever consultas de ranking, participação e ticket por dimensão.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "SQL analítico",
+      "ranking",
+      "participação"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Comitê comercial semanal.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 21,
+    "status": "validado"
+  },
+  {
+    "numero": 23,
+    "slug": "cohort-de-retencao",
+    "titulo": "Cohort de retenção",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/023-cohort-de-retencao",
+    "problema": "Produto não sabe se quem entrou em março continua ativo em junho.",
+    "objetivo_aprendizagem": "Montar uma cohort de retenção por mês de primeira compra.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "cohort",
+      "retenção",
+      "primeira compra"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Saúde de um clube de assinatura.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 22,
+    "status": "validado"
+  },
+  {
+    "numero": 24,
+    "slug": "funil-de-conversao",
+    "titulo": "Funil de conversão",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/024-funil-de-conversao",
+    "problema": "Visitantes, cadastros e compras existem, mas o funil não fecha.",
+    "objetivo_aprendizagem": "Calcular um funil com taxas etapa a etapa a partir de eventos.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "funil",
+      "conversão",
+      "eventos"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Otimização de checkout de e-commerce.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 22,
+    "status": "validado"
+  },
+  {
+    "numero": 25,
+    "slug": "rfm-em-sql",
+    "titulo": "RFM em SQL",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/025-rfm-em-sql",
+    "problema": "CRM pede recência, frequência e valor e a planilha não escala.",
+    "objetivo_aprendizagem": "Calcular RFM em SQL e classificar clientes em scores.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "RFM",
+      "recência",
+      "segmentação"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Campanha de reativação de varejo.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 22,
+    "status": "validado"
+  },
+  {
+    "numero": 26,
+    "slug": "funcoes-de-janela",
+    "titulo": "Funções de janela para DS",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/026-funcoes-de-janela",
+    "problema": "É preciso comparar cada dia com o anterior e com a média móvel.",
+    "objetivo_aprendizagem": "Usar LAG, RANK e média móvel em SQL para features temporais.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "window function",
+      "LAG",
+      "média móvel"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Features de um modelo de demanda.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 22,
+    "status": "validado"
+  },
+  {
+    "numero": 27,
+    "slug": "amostragem-estratificada-sql",
+    "titulo": "Amostragem estratificada em SQL",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/027-amostragem-estratificada-sql",
+    "problema": "A amostra de treino ignora a mistura de UFs e o modelo enviesa.",
+    "objetivo_aprendizagem": "Sortear uma amostra estratificada por grupo com SQL.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "amostragem",
+      "estrato",
+      "vies de seleção"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Amostra de treino de um modelo de crédito regional.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 21,
+    "status": "validado"
+  },
+  {
+    "numero": 28,
+    "slug": "pivot-e-unpivot",
+    "titulo": "Pivot e unpivot",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/028-pivot-e-unpivot",
+    "problema": "A tabela larga de meses não serve para um modelo longitudinal.",
+    "objetivo_aprendizagem": "Pivotar e despivotar métricas mensais em SQL.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "pivot",
+      "tidy data",
+      "formato longo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Preparar painel de receita mensal para modelagem.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 21,
+    "status": "validado"
+  },
+  {
+    "numero": 29,
+    "slug": "join-e-vazamento-temporal",
+    "titulo": "Join e vazamento temporal",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/029-join-e-vazamento-temporal",
+    "problema": "O join com cadastro usa o estado futuro do cliente.",
+    "objetivo_aprendizagem": "Detectar e corrigir join que usa informação posterior ao evento.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "leakage",
+      "as-of join",
+      "ponto no tempo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Feature store analítica de um banco.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 26,
+    "status": "validado"
+  },
+  {
+    "numero": 30,
+    "slug": "kpis-versionados-sql",
+    "titulo": "KPIs versionados em SQL",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/030-kpis-versionados-sql",
+    "problema": "Cada analista calcula margem com uma regra diferente.",
+    "objetivo_aprendizagem": "Materializar KPIs com SQL versionado e um dicionário da métrica.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "métrica",
+      "definição",
+      "reprodutibilidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Camada semântica enxuta de um e-commerce.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 22,
+    "status": "validado"
+  },
+  {
+    "numero": 31,
+    "slug": "features-agregadas-sql",
+    "titulo": "Features agregadas via SQL",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/031-features-agregadas-sql",
+    "problema": "O modelo precisa de soma, contagem e recência nos 30 dias anteriores.",
+    "objetivo_aprendizagem": "Construir features de janela histórica sem vazar o futuro.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "feature SQL",
+      "janela histórica",
+      "ponto no tempo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Variáveis de um modelo de churn.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 29,
+    "status": "validado"
+  },
+  {
+    "numero": 32,
+    "slug": "qualidade-em-sql",
+    "titulo": "Testes de qualidade em SQL",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/032-qualidade-em-sql",
+    "problema": "A tabela analítica entra com nulos e duplicatas na chave.",
+    "objetivo_aprendizagem": "Rodar checagens SQL de not null, unique e faixa e falhar se quebrar.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "data quality",
+      "asserção",
+      "contrato"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Quality gate de um mart de ciência de dados.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 21,
+    "status": "validado"
+  },
+  {
+    "numero": 33,
+    "slug": "views-analiticas",
+    "titulo": "Views analíticas locais",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/033-views-analiticas",
+    "problema": "Toda pergunta reescreve o mesmo join de pedidos e itens.",
+    "objetivo_aprendizagem": "Criar views SQL reutilizáveis para a base analítica.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "view",
+      "reúso",
+      "camada analítica"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Encurtar o caminho de um analista novo no time.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 21,
+    "status": "validado"
+  },
+  {
+    "numero": 34,
+    "slug": "dicionario-analitico",
+    "titulo": "Dicionário analítico",
+    "nivel": "basico",
+    "categoria": "03-sql-para-ciencia-de-dados",
+    "caminho": "03-sql-para-ciencia-de-dados/034-dicionario-analitico",
+    "problema": "Ninguém sabe a unidade, o nulo e o dono de cada coluna.",
+    "objetivo_aprendizagem": "Gerar um dicionário de dados a partir do schema e de regras.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "sqlite3",
+      "pytest"
+    ],
+    "conceitos": [
+      "dicionário",
+      "metadado",
+      "governança leve"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Onboarding de um cientista de dados em uma mesa nova.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 21,
+    "status": "validado"
+  },
+  {
+    "numero": 35,
+    "slug": "descritiva-robusta",
+    "titulo": "Estatística descritiva robusta",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/035-descritiva-robusta",
+    "problema": "A média de ticket é puxada por poucos pedidos e o relatório mente.",
+    "objetivo_aprendizagem": "Comparar média, mediana, IQR e MAD e escolher o resumo robusto.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "mediana",
+      "MAD",
+      "robustez"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "KPI de ticket em marketplace com outliers.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 4,
+    "status": "validado"
+  },
+  {
+    "numero": 36,
+    "slug": "intervalo-de-confianca",
+    "titulo": "Intervalo de confiança",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/036-intervalo-de-confianca",
+    "problema": "A conversão da semana é um ponto e a diretoria trata como verdade.",
+    "objetivo_aprendizagem": "Estimar um intervalo de confiança para uma proporção e para uma média.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "intervalo de confiança",
+      "erro padrão",
+      "incerteza"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Comunicar conversão semanal com incerteza.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 35,
+    "status": "validado"
+  },
+  {
+    "numero": 37,
+    "slug": "teste-t",
+    "titulo": "Teste t de duas amostras",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/037-teste-t",
+    "problema": "Dois canais têm tickets diferentes e ninguém testa se é ruído.",
+    "objetivo_aprendizagem": "Rodar um teste t de duas amostras e reportar estatística, p-valor e efeito.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "teste t",
+      "p-valor",
+      "tamanho de efeito"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Comparar ticket de loja física e e-commerce.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 36,
+    "status": "validado"
+  },
+  {
+    "numero": 38,
+    "slug": "teste-qui-quadrado",
+    "titulo": "Teste qui-quadrado",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/038-teste-qui-quadrado",
+    "problema": "Conversão parece depender do dispositivo, mas pode ser acaso.",
+    "objetivo_aprendizagem": "Montar tabela de contingência e aplicar um teste qui-quadrado.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "qui-quadrado",
+      "contingência",
+      "independência"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Ver se dispositivo e conversão estão associados.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 37,
+    "status": "validado"
+  },
+  {
+    "numero": 39,
+    "slug": "correlacao-nao-e-causa",
+    "titulo": "Correlação não é causa",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/039-correlacao-nao-e-causa",
+    "problema": "Uma correlação forte é vendida como alavanca de negócio.",
+    "objetivo_aprendizagem": "Reproduzir um paradoxo de Simpson e mostrar que a associação se inverte.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "Simpson",
+      "confusão",
+      "causalidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Evitar decisão de mídia baseada em correlação agregada.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 12,
+    "status": "validado"
+  },
+  {
+    "numero": 40,
+    "slug": "teste-ab",
+    "titulo": "Teste A/B clássico",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/040-teste-ab",
+    "problema": "Uma landing nova parece converter mais e o time quer publicar agora.",
+    "objetivo_aprendizagem": "Calcular conversões, diferença absoluta e relativa e um teste de duas proporções.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "A/B",
+      "duas proporções",
+      "uplift"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Experimento de checkout.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 37,
+    "status": "validado"
+  },
+  {
+    "numero": 41,
+    "slug": "poder-e-tamanho-amostral",
+    "titulo": "Poder e tamanho amostral",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/041-poder-e-tamanho-amostral",
+    "problema": "O teste foi interrompido com n pequeno e o time declara vitória.",
+    "objetivo_aprendizagem": "Calcular tamanho amostral para um lift mínimo e o poder observado.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "poder",
+      "MDE",
+      "tamanho amostral"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Planejamento de experimento de produto.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 40,
+    "status": "validado"
+  },
+  {
+    "numero": 42,
+    "slug": "bootstrap",
+    "titulo": "Bootstrap",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/042-bootstrap",
+    "problema": "A métrica não tem fórmula pronta de erro padrão.",
+    "objetivo_aprendizagem": "Estimar um intervalo via bootstrap e comparar com o analítico.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "bootstrap",
+      "reamostragem",
+      "intervalo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Incerteza de um ticket mediano.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 36,
+    "status": "validado"
+  },
+  {
+    "numero": 43,
+    "slug": "mann-whitney",
+    "titulo": "Mann-Whitney",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/043-mann-whitney",
+    "problema": "O ticket não é normal e o teste t fica difícil de defender.",
+    "objetivo_aprendizagem": "Aplicar Mann-Whitney e comparar a conclusão com o teste t.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "não paramétrico",
+      "Mann-Whitney",
+      "ranks"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Comparar gasto de dois planos de assinatura.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 37,
+    "status": "validado"
+  },
+  {
+    "numero": 44,
+    "slug": "cuped",
+    "titulo": "CUPED e covariáveis",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/044-cuped",
+    "problema": "O A/B tem muita variância e o efeito some no ruído.",
+    "objetivo_aprendizagem": "Reduzir variância com uma covariável pré-experimento (CUPED).",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "CUPED",
+      "covariável",
+      "variância"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Experimento de pricing com gasto histórico.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 40,
+    "status": "validado"
+  },
+  {
+    "numero": 45,
+    "slug": "testes-multiplos",
+    "titulo": "Testes múltiplos",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/045-testes-multiplos",
+    "problema": "O time olhou 20 recortes e um deles deu significativo.",
+    "objetivo_aprendizagem": "Aplicar Bonferroni e FDR e mostrar quantos efeitos sobrevivem.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "comparações múltiplas",
+      "Bonferroni",
+      "FDR"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Análise de subgrupos de uma campanha.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 40,
+    "status": "validado"
+  },
+  {
+    "numero": 46,
+    "slug": "peeking",
+    "titulo": "Peeking e tamanho fixo",
+    "nivel": "intermediario",
+    "categoria": "04-estatistica-e-experimentos",
+    "caminho": "04-estatistica-e-experimentos/046-peeking",
+    "problema": "Alguém olhou o p-valor no meio do experimento e parou.",
+    "objetivo_aprendizagem": "Simular peeking e mostrar inflação de falso positivo contra um n fixo.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "peeking",
+      "falso positivo",
+      "tamanho fixo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Governança de experimentação de produto.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 41,
+    "status": "validado"
+  },
+  {
+    "numero": 47,
+    "slug": "encoding-categorico",
+    "titulo": "Encoding categórico",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/047-encoding-categorico",
+    "problema": "UF e canal entram como texto e o modelo não aceita.",
+    "objetivo_aprendizagem": "Comparar one-hot e ordinal e gravar o dataset encodado.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "one-hot",
+      "ordinal",
+      "variável categórica"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Preparar features de um modelo de conversão.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 2,
+    "status": "validado"
+  },
+  {
+    "numero": 48,
+    "slug": "scaling-e-normalizacao",
+    "titulo": "Scaling e normalização",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/048-scaling-e-normalizacao",
+    "problema": "Renda e idade têm escalas diferentes e a regularização pune a renda.",
+    "objetivo_aprendizagem": "Aplicar standard, min-max e robust scaler e comparar intervalos.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "StandardScaler",
+      "MinMax",
+      "RobustScaler"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Features de um modelo linear de crédito.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 47,
+    "status": "validado"
+  },
+  {
+    "numero": 49,
+    "slug": "binning",
+    "titulo": "Binning e discretização",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/049-binning",
+    "problema": "Idade contínua não captura faixas de apólice.",
+    "objetivo_aprendizagem": "Discretizar por quantis e por largura igual e avaliar a perda de informação.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "binning",
+      "quantis",
+      "discretização"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Faixas de um modelo de seguro.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 48,
+    "status": "validado"
+  },
+  {
+    "numero": 50,
+    "slug": "features-de-calendario",
+    "titulo": "Features de calendário",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/050-features-de-calendario",
+    "problema": "O modelo trata a data como id e perde sazonalidade.",
+    "objetivo_aprendizagem": "Derivar mês, dia da semana, feriado simples e indicador de fim de mês.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "sazonalidade",
+      "calendário",
+      "feature temporal"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Previsão de demanda varejista.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 5,
+    "status": "validado"
+  },
+  {
+    "numero": 51,
+    "slug": "target-encoding",
+    "titulo": "Target encoding com CV",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/051-target-encoding",
+    "problema": "Média do alvo por cidade vaza o próprio rótulo.",
+    "objetivo_aprendizagem": "Fazer target encoding com validação cruzada para reduzir leakage.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "target encoding",
+      "CV",
+      "leakage"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Cidade como feature de um modelo de conversão.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 47,
+    "status": "validado"
+  },
+  {
+    "numero": 52,
+    "slug": "pipeline-sklearn",
+    "titulo": "Pipeline sklearn",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/052-pipeline-sklearn",
+    "problema": "Imputar, escalar e treinar em células soltas quebra na produção.",
+    "objetivo_aprendizagem": "Empacotar pré-processamento e modelo num Pipeline e persistir.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "Pipeline",
+      "ColumnTransformer",
+      "persistência"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Contrato de features de um modelo de churn.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 48,
+    "status": "validado"
+  },
+  {
+    "numero": 53,
+    "slug": "leakage-temporal",
+    "titulo": "Leakage temporal",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/053-leakage-temporal",
+    "problema": "A feature de 30 dias inclui o dia da predição.",
+    "objetivo_aprendizagem": "Detectar leakage temporal e reconstruir a janela com corte exclusivo.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "leakage",
+      "cutoff",
+      "janela exclusiva"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Features de um modelo de inadimplência.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 31,
+    "status": "validado"
+  },
+  {
+    "numero": 54,
+    "slug": "selecao-de-features",
+    "titulo": "Seleção de features",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/054-selecao-de-features",
+    "problema": "Há 40 colunas e várias são ruído ou colineares.",
+    "objetivo_aprendizagem": "Ranquear features por importância e por correlação com o alvo.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "seleção",
+      "importância",
+      "colinearidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Enxugar um modelo de propensão a compra.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 52,
+    "status": "validado"
+  },
+  {
+    "numero": 55,
+    "slug": "interacoes-e-polinomios",
+    "titulo": "Interações e polinômios",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/055-interacoes-e-polinomios",
+    "problema": "O efeito de desconto depende da categoria e o modelo linear não vê.",
+    "objetivo_aprendizagem": "Gerar interações e termos polinomiais e medir o ganho contra o baseline.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "interação",
+      "polinômio",
+      "capacidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Elasticidade de preço por categoria.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 52,
+    "status": "validado"
+  },
+  {
+    "numero": 56,
+    "slug": "imputacao-avancada",
+    "titulo": "Imputação avançada",
+    "nivel": "intermediario",
+    "categoria": "05-feature-engineering",
+    "caminho": "05-feature-engineering/056-imputacao-avancada",
+    "problema": "Dropar nulos reduz demais o n e a média distorce a cauda.",
+    "objetivo_aprendizagem": "Comparar imputação por mediana, indicador de missing e iterativa simples.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "imputação",
+      "indicador de missing",
+      "viés"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Base de crédito com renda faltante.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 3,
+    "status": "validado"
+  },
+  {
+    "numero": 57,
+    "slug": "regressao-linear",
+    "titulo": "Regressão linear",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/057-regressao-linear",
+    "problema": "O time precisa de um modelo explicável de preço.",
+    "objetivo_aprendizagem": "Treinar regressão linear, inspecionar coeficientes e avaliar no holdout.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "OLS",
+      "coeficiente",
+      "holdout"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Precificação inicial de imóveis.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 52,
+    "status": "validado"
+  },
+  {
+    "numero": 58,
+    "slug": "metricas-de-regressao",
+    "titulo": "Métricas de regressão",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/058-metricas-de-regressao",
+    "problema": "Só o R² é reportado e o erro em reais fica escondido.",
+    "objetivo_aprendizagem": "Calcular RMSE, MAE, MAPE e R² e interpretar na unidade do negócio.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "RMSE",
+      "MAE",
+      "MAPE"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Erro de um forecast de receita.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 57,
+    "status": "validado"
+  },
+  {
+    "numero": 59,
+    "slug": "regressao-logistica",
+    "titulo": "Regressão logística",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/059-regressao-logistica",
+    "problema": "A pergunta é binária — vai churnar? — e a linear não serve.",
+    "objetivo_aprendizagem": "Treinar logística, ler odds e avaliar acurácia e log-loss.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "logística",
+      "odds",
+      "probabilidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Propensão a cancelamento de telecom.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 52,
+    "status": "validado"
+  },
+  {
+    "numero": 60,
+    "slug": "matriz-e-threshold",
+    "titulo": "Matriz de confusão e threshold",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/060-matriz-e-threshold",
+    "problema": "O limiar 0,5 gera muitos falsos positivos caros.",
+    "objetivo_aprendizagem": "Varrear thresholds e escolher um corte alinhado a custo de erro.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "matriz de confusão",
+      "precision",
+      "recall",
+      "threshold"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Fila de cobrança com custo de contato.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 59,
+    "status": "validado"
+  },
+  {
+    "numero": 61,
+    "slug": "arvore-de-decisao",
+    "titulo": "Árvore de decisão",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/061-arvore-de-decisao",
+    "problema": "Negócio quer regras legíveis, não só um score.",
+    "objetivo_aprendizagem": "Treinar uma árvore rasa e exportar regras e importância.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "árvore",
+      "regras",
+      "interpretabilidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Política de crédito de uma fintech.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 59,
+    "status": "validado"
+  },
+  {
+    "numero": 62,
+    "slug": "random-forest",
+    "titulo": "Random Forest",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/062-random-forest",
+    "problema": "A árvore única superajusta e a logística subajusta.",
+    "objetivo_aprendizagem": "Treinar uma floresta, comparar com a árvore e medir o ganho.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "bagging",
+      "RandomForest",
+      "superajuste"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Modelo de fraude em transações.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 61,
+    "status": "validado"
+  },
+  {
+    "numero": 63,
+    "slug": "gradient-boosting",
+    "titulo": "Gradient boosting",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/063-gradient-boosting",
+    "problema": "O residual ainda tem padrão e a floresta saturóu.",
+    "objetivo_aprendizagem": "Treinar um boosting raso e comparar com a floresta no mesmo split.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "boosting",
+      "resíduo",
+      "ensemble"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Ranking de propensão a compra.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 62,
+    "status": "validado"
+  },
+  {
+    "numero": 64,
+    "slug": "validacao-cruzada",
+    "titulo": "Validação cruzada",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/064-validacao-cruzada",
+    "problema": "O holdout único sorteou um mês fácil e o número ficou otimista.",
+    "objetivo_aprendizagem": "Estimar a métrica com K-fold e reportar média e desvio.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "K-fold",
+      "variância de estimativa",
+      "generalização"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Número de um modelo que vai a comitê.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 59,
+    "status": "validado"
+  },
+  {
+    "numero": 65,
+    "slug": "classe-desbalanceada",
+    "titulo": "Classe desbalanceada",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/065-classe-desbalanceada",
+    "problema": "Fraude é 2% e a acurácia de 98% não serve.",
+    "objetivo_aprendizagem": "Comparar class_weight, undersample simples e métricas adequadas.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "desbalanceamento",
+      "class_weight",
+      "recall"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Detecção de fraude em pagamentos.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 59,
+    "status": "validado"
+  },
+  {
+    "numero": 66,
+    "slug": "roc-e-pr",
+    "titulo": "Curvas ROC e PR",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/066-roc-e-pr",
+    "problema": "O AUC ROC parece bom numa classe rara e engana o comitê.",
+    "objetivo_aprendizagem": "Calcular ROC e Precision-Recall e explicar quando cada uma importa.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "ROC",
+      "PR curve",
+      "classe rara"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Comunicação de um modelo de churn raro.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 65,
+    "status": "validado"
+  },
+  {
+    "numero": 67,
+    "slug": "baseline-vs-modelo",
+    "titulo": "Baseline versus modelo",
+    "nivel": "intermediario",
+    "categoria": "06-aprendizado-supervisionado",
+    "caminho": "06-aprendizado-supervisionado/067-baseline-vs-modelo",
+    "problema": "O modelo é apresentado sem um bobão para comparar.",
+    "objetivo_aprendizagem": "Confrontar dummy, regra de negócio e o modelo no mesmo split.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "baseline",
+      "dummy",
+      "ganho incremental"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Defesa de um modelo de inadimplência.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 59,
+    "status": "validado"
+  },
+  {
+    "numero": 68,
+    "slug": "k-means",
+    "titulo": "K-means",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/068-k-means",
+    "problema": "Marketing pede segmentos e a base não tem rótulo.",
+    "objetivo_aprendizagem": "Treinar K-means, gravar centróides e o tamanho de cada grupo.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "K-means",
+      "centróide",
+      "segmento"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Segmentação de clientes de varejo.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 48,
+    "status": "validado"
+  },
+  {
+    "numero": 69,
+    "slug": "elbow-e-silhouette",
+    "titulo": "Elbow e silhouette",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/069-elbow-e-silhouette",
+    "problema": "O k foi escolhido no feeling.",
+    "objetivo_aprendizagem": "Varrear k, plotar inércia e silhouette e recomendar um k.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest",
+      "matplotlib"
+    ],
+    "conceitos": [
+      "elbow",
+      "silhouette",
+      "escolha de k"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Defesa do número de clusters de uma campanha.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 68,
+    "status": "validado"
+  },
+  {
+    "numero": 70,
+    "slug": "pca",
+    "titulo": "PCA",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/070-pca",
+    "problema": "Há colunas demais e o gráfico de segmentos não cabe.",
+    "objetivo_aprendizagem": "Reduzir dimensão com PCA e reportar variância explicada.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "PCA",
+      "variância explicada",
+      "componentes"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Visualizar clientes em duas dimensões.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 68,
+    "status": "validado"
+  },
+  {
+    "numero": 71,
+    "slug": "clustering-hierarquico",
+    "titulo": "Clustering hierárquico",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/071-clustering-hierarquico",
+    "problema": "O negócio quer uma árvore de grupos, não só k bolas.",
+    "objetivo_aprendizagem": "Rodar agglomerative clustering e resumir o dendrograma em cortes.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "hierárquico",
+      "linkage",
+      "dendrograma"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Agrupar SKUs por comportamento de venda.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 68,
+    "status": "validado"
+  },
+  {
+    "numero": 72,
+    "slug": "deteccao-de-anomalias",
+    "titulo": "Detecção de anomalias",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/072-deteccao-de-anomalias",
+    "problema": "Alguns pedidos são estranhos e não há rótulo de fraude.",
+    "objetivo_aprendizagem": "Marcar anomalias com Isolation Forest e inspecionar scores.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "IsolationForest",
+      "anomaly score",
+      "não supervisionado"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Fila de revisão de transações atípicas.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 4,
+    "status": "validado"
+  },
+  {
+    "numero": 73,
+    "slug": "dbscan",
+    "titulo": "DBSCAN",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/073-dbscan",
+    "problema": "Os grupos não são esferas e o K-means parte errado.",
+    "objetivo_aprendizagem": "Clusterizar com DBSCAN e separar ruído dos grupos densos.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "DBSCAN",
+      "densidade",
+      "ruído"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Aglomerados geográficos de entregas.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 68,
+    "status": "validado"
+  },
+  {
+    "numero": 74,
+    "slug": "projecao-tsne",
+    "titulo": "Projeção t-SNE",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/074-projecao-tsne",
+    "problema": "O PCA linear não separa visualmente os grupos.",
+    "objetivo_aprendizagem": "Projetar com t-SNE e gravar coordenadas para inspeção.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "t-SNE",
+      "projeção",
+      "visualização"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Explorar embeddings tabulares de clientes.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 70,
+    "status": "validado"
+  },
+  {
+    "numero": 75,
+    "slug": "segmentacao-de-clientes",
+    "titulo": "Segmentação de clientes",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/075-segmentacao-de-clientes",
+    "problema": "RFM existe, mas ninguém transformou score em personas acionáveis.",
+    "objetivo_aprendizagem": "Juntar RFM, clustering e um perfil verbal de cada segmento.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "RFM",
+      "clustering",
+      "persona"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Playbook de CRM.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 25,
+    "status": "validado"
+  },
+  {
+    "numero": 76,
+    "slug": "topicos-nmf",
+    "titulo": "Tópicos com NMF",
+    "nivel": "avancado",
+    "categoria": "07-nao-supervisionado",
+    "caminho": "07-nao-supervisionado/076-topicos-nmf",
+    "problema": "Há milhares de textos de tickets e ninguém lê o tema.",
+    "objetivo_aprendizagem": "Extrair tópicos com TF-IDF e NMF e listar termos de cada tema.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "NMF",
+      "TF-IDF",
+      "tópico"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Triagem de atendimento.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": null,
+    "status": "validado"
+  },
+  {
+    "numero": 77,
+    "slug": "decomposicao-de-serie",
+    "titulo": "Decomposição de série",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/077-decomposicao-de-serie",
+    "problema": "A receita sobe e ninguém separa tendência de sazonalidade.",
+    "objetivo_aprendizagem": "Decompor uma série em tendência, sazonalidade e resíduo.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest",
+      "matplotlib"
+    ],
+    "conceitos": [
+      "tendência",
+      "sazonalidade",
+      "resíduo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Leitura de uma série semanal de gôndola.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 5,
+    "status": "validado"
+  },
+  {
+    "numero": 78,
+    "slug": "baseline-naive",
+    "titulo": "Baseline naive e sazonal",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/078-baseline-naive",
+    "problema": "O forecast sofisticado nunca foi comparado com ontem e com semana passada.",
+    "objetivo_aprendizagem": "Calcular naive e seasonal naive e medir o erro no holdout temporal.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "naive",
+      "sazonal",
+      "baseline de série"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Piso mínimo de um forecast de demanda.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 77,
+    "status": "validado"
+  },
+  {
+    "numero": 79,
+    "slug": "previsao-rolling",
+    "titulo": "Previsão rolling",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/079-previsao-rolling",
+    "problema": "O modelo é treinado uma vez e envelhece em silêncio.",
+    "objetivo_aprendizagem": "Fazer forecast com média móvel e rolling origin.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "rolling origin",
+      "média móvel",
+      "walk-forward"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Previsão curta de pedidos diários.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 78,
+    "status": "validado"
+  },
+  {
+    "numero": 80,
+    "slug": "backtest-temporal",
+    "titulo": "Backtest temporal",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/080-backtest-temporal",
+    "problema": "O split aleatório vaza o futuro para o treino.",
+    "objetivo_aprendizagem": "Avaliar um forecast com cortes temporais sucessivos.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "backtest",
+      "corte temporal",
+      "walk-forward"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Validação honesta de demanda.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 79,
+    "status": "validado"
+  },
+  {
+    "numero": 81,
+    "slug": "mudanca-de-regime",
+    "titulo": "Mudança de regime",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/081-mudanca-de-regime",
+    "problema": "Uma promoção permanente mudou o nível da série e o modelo antigo quebrou.",
+    "objetivo_aprendizagem": "Detectar uma mudança de média e marcar o ponto de quebra.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "change point",
+      "regime",
+      "nível"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Alerta de quebra estrutural em receita.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 77,
+    "status": "validado"
+  },
+  {
+    "numero": 82,
+    "slug": "bag-of-words",
+    "titulo": "Bag of words",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/082-bag-of-words",
+    "problema": "Tickets de suporte são texto livre e o time só conta volume.",
+    "objetivo_aprendizagem": "Vetorizar com contagem de termos e inspecionar o vocabulário.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "BoW",
+      "vocabulário",
+      "vetor esparso"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Primeira representação de um corpus de atendimento.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": null,
+    "status": "validado"
+  },
+  {
+    "numero": 83,
+    "slug": "tfidf-e-similaridade",
+    "titulo": "TF-IDF e similaridade",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/083-tfidf-e-similaridade",
+    "problema": "Há tickets repetidos e ninguém acha o semelhante.",
+    "objetivo_aprendizagem": "Calcular TF-IDF e similaridade cosseno entre documentos.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "TF-IDF",
+      "cosseno",
+      "near-dup"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Agrupar reclamações parecidas.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 82,
+    "status": "validado"
+  },
+  {
+    "numero": 84,
+    "slug": "classificacao-de-texto",
+    "titulo": "Classificação de texto",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/084-classificacao-de-texto",
+    "problema": "Cada ticket precisa de uma fila e a triagem é manual.",
+    "objetivo_aprendizagem": "Treinar um classificador linear sobre TF-IDF e avaliar macro-F1.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "classificação de texto",
+      "TF-IDF",
+      "F1"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Roteamento de filas de suporte.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 83,
+    "status": "validado"
+  },
+  {
+    "numero": 85,
+    "slug": "sentimento-simples",
+    "titulo": "Sentimento simples",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/085-sentimento-simples",
+    "problema": "O NPS aberto não é lido e o humor do cliente some.",
+    "objetivo_aprendizagem": "Classificar sentimento com léxico e com um modelo linear e comparar.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "sentimento",
+      "léxico",
+      "baseline"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Monitor de reviews de um app.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 84,
+    "status": "validado"
+  },
+  {
+    "numero": 86,
+    "slug": "similaridade-de-busca",
+    "titulo": "Busca por similaridade",
+    "nivel": "avancado",
+    "categoria": "08-series-temporais-e-texto",
+    "caminho": "08-series-temporais-e-texto/086-similaridade-de-busca",
+    "problema": "O analista precisa achar tickets parecidos com uma consulta nova.",
+    "objetivo_aprendizagem": "Ranquear documentos por similaridade a uma query.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "busca",
+      "ranking",
+      "cosseno"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Search interno de uma base de conhecimento.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 83,
+    "status": "validado"
+  },
+  {
+    "numero": 87,
+    "slug": "data-drift",
+    "titulo": "Data drift",
+    "nivel": "avancado",
+    "categoria": "09-avaliacao-etica-e-mlops",
+    "caminho": "09-avaliacao-etica-e-mlops/087-data-drift",
+    "problema": "O modelo em produção vê outra distribuição e ninguém alerta.",
+    "objetivo_aprendizagem": "Comparar treino e atual com PSI e testes de média.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "drift",
+      "PSI",
+      "monitoramento"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Alerta de um score de crédito.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 59,
+    "status": "validado"
+  },
+  {
+    "numero": 88,
+    "slug": "fairness",
+    "titulo": "Fairness e disparidade",
+    "nivel": "avancado",
+    "categoria": "09-avaliacao-etica-e-mlops",
+    "caminho": "09-avaliacao-etica-e-mlops/088-fairness",
+    "problema": "A taxa de aprovação muda entre grupos e isso não foi medido.",
+    "objetivo_aprendizagem": "Calcular taxas por grupo e uma razão de disparidade com dado sintético.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "fairness",
+      "disparate impact",
+      "grupo sensível"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Auditoria educacional de um score fictício.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 59,
+    "status": "validado"
+  },
+  {
+    "numero": 89,
+    "slug": "importancia-por-permutacao",
+    "titulo": "Importância por permutação",
+    "nivel": "avancado",
+    "categoria": "09-avaliacao-etica-e-mlops",
+    "caminho": "09-avaliacao-etica-e-mlops/089-importancia-por-permutacao",
+    "problema": "A importância da árvore favorece variáveis de alta cardinalidade.",
+    "objetivo_aprendizagem": "Medir importância por permutação no holdout e comparar com a nativa.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "permutation importance",
+      "explicação",
+      "holdout"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Explicar um modelo de churn para o negócio.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 62,
+    "status": "validado"
+  },
+  {
+    "numero": 90,
+    "slug": "model-card",
+    "titulo": "Model card",
+    "nivel": "avancado",
+    "categoria": "09-avaliacao-etica-e-mlops",
+    "caminho": "09-avaliacao-etica-e-mlops/090-model-card",
+    "problema": "O modelo vai a comitê sem uso pretendido, limites e métricas.",
+    "objetivo_aprendizagem": "Gerar um model card Markdown com dados, métricas, limites e uso.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "model card",
+      "documentação",
+      "risco"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Pacote de aprovação de um modelo interno.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 67,
+    "status": "validado"
+  },
+  {
+    "numero": 91,
+    "slug": "versionamento-de-modelo",
+    "titulo": "Versionamento de modelo",
+    "nivel": "avancado",
+    "categoria": "09-avaliacao-etica-e-mlops",
+    "caminho": "09-avaliacao-etica-e-mlops/091-versionamento-de-modelo",
+    "problema": "Há três pickles na pasta e ninguém sabe qual está no ar.",
+    "objetivo_aprendizagem": "Salvar modelo, hash, métricas e um registro de versões.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "registro",
+      "hash",
+      "linhagem de modelo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Controle local de um laboratório de DS.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 52,
+    "status": "validado"
+  },
+  {
+    "numero": 92,
+    "slug": "monitoramento-de-predicao",
+    "titulo": "Monitoramento de predição",
+    "nivel": "avancado",
+    "categoria": "09-avaliacao-etica-e-mlops",
+    "caminho": "09-avaliacao-etica-e-mlops/092-monitoramento-de-predicao",
+    "problema": "O score médio caiu e o time só percebeu no mês seguinte.",
+    "objetivo_aprendizagem": "Calcular estatísticas da predição ao longo do tempo e um alerta.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "monitoramento",
+      "score médio",
+      "alerta"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Dashboard operacional de um modelo de risco.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 91,
+    "status": "validado"
+  },
+  {
+    "numero": 93,
+    "slug": "threshold-por-custo",
+    "titulo": "Threshold por custo de negócio",
+    "nivel": "avancado",
+    "categoria": "09-avaliacao-etica-e-mlops",
+    "caminho": "09-avaliacao-etica-e-mlops/093-threshold-por-custo",
+    "problema": "Precision e recall não estão em reais.",
+    "objetivo_aprendizagem": "Escolher o limiar que minimiza um custo explícito de FP e FN.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "custo",
+      "threshold",
+      "matriz de custo"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Política de contato de cobrança.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 60,
+    "status": "validado"
+  },
+  {
+    "numero": 94,
+    "slug": "retrain-vs-freeze",
+    "titulo": "Retreino versus freeze",
+    "nivel": "avancado",
+    "categoria": "09-avaliacao-etica-e-mlops",
+    "caminho": "09-avaliacao-etica-e-mlops/094-retrain-vs-freeze",
+    "problema": "Ninguém sabe se deve retreinar toda semana ou congelar o modelo.",
+    "objetivo_aprendizagem": "Comparar um modelo congelado com um retreino em janela móvel.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "retreino",
+      "freeze",
+      "envelhecimento"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Política de atualização de um ranker de propensão.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 80,
+    "status": "validado"
+  },
+  {
+    "numero": 95,
+    "slug": "e2e-churn",
+    "titulo": "Churn de ponta a ponta",
+    "nivel": "avancado",
+    "categoria": "10-projetos-end-to-end",
+    "caminho": "10-projetos-end-to-end/095-e2e-churn",
+    "problema": "Telecom precisa de um fluxo completo: limpeza, modelo e card.",
+    "objetivo_aprendizagem": "Do CSV ao modelo de churn com métricas, threshold e model card.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "churn",
+      "end-to-end",
+      "model card"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Protótipo de retenção de uma operadora fictícia.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 90,
+    "status": "validado"
+  },
+  {
+    "numero": 96,
+    "slug": "e2e-demanda",
+    "titulo": "Previsão de demanda ponta a ponta",
+    "nivel": "avancado",
+    "categoria": "10-projetos-end-to-end",
+    "caminho": "10-projetos-end-to-end/096-e2e-demanda",
+    "problema": "Varejo quer um forecast semanal com baseline e backtest.",
+    "objetivo_aprendizagem": "Da série ao forecast com naive, rolling e relatório de erro.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest",
+      "matplotlib"
+    ],
+    "conceitos": [
+      "demanda",
+      "backtest",
+      "baseline"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Planejamento de estoque de uma categoria.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 80,
+    "status": "validado"
+  },
+  {
+    "numero": 97,
+    "slug": "e2e-credito",
+    "titulo": "Credit scoring ponta a ponta",
+    "nivel": "avancado",
+    "categoria": "10-projetos-end-to-end",
+    "caminho": "10-projetos-end-to-end/097-e2e-credito",
+    "problema": "Uma fintech fictícia precisa de score, fairness e registro.",
+    "objetivo_aprendizagem": "Treinar um score, documentar disparidade e versionar o artefato.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "crédito",
+      "fairness",
+      "registro"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Pacote educacional de crédito com dado sintético.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 88,
+    "status": "validado"
+  },
+  {
+    "numero": 98,
+    "slug": "e2e-recomendacao",
+    "titulo": "Recomendação simples ponta a ponta",
+    "nivel": "avancado",
+    "categoria": "10-projetos-end-to-end",
+    "caminho": "10-projetos-end-to-end/098-e2e-recomendacao",
+    "problema": "O catálogo precisa de 'quem viu isto viu aquilo' sem motor pesado.",
+    "objetivo_aprendizagem": "Construir similaridade item-item e gerar top-N com cobertura.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "pytest"
+    ],
+    "conceitos": [
+      "item-item",
+      "similaridade",
+      "cobertura"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Vitrine de um e-commerce pequeno.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 83,
+    "status": "validado"
+  },
+  {
+    "numero": 99,
+    "slug": "e2e-tickets",
+    "titulo": "Tickets de suporte ponta a ponta",
+    "nivel": "avancado",
+    "categoria": "10-projetos-end-to-end",
+    "caminho": "10-projetos-end-to-end/099-e2e-tickets",
+    "problema": "Atendimento quer tópicos, sentimento e fila sugerida.",
+    "objetivo_aprendizagem": "Do texto ao pacote: tópicos, sentimento, classificador e relatório.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "NLP",
+      "tópico",
+      "fila"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Triagem educacional de uma central fictícia.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 85,
+    "status": "validado"
+  },
+  {
+    "numero": 100,
+    "slug": "e2e-laboratorio",
+    "titulo": "Laboratório local de ciência de dados",
+    "nivel": "avancado",
+    "categoria": "10-projetos-end-to-end",
+    "caminho": "10-projetos-end-to-end/100-e2e-laboratorio",
+    "problema": "Falta um comando único que limpe, modele, avalie e documente.",
+    "objetivo_aprendizagem": "Orquestrar EDA, modelo, drift, card e registro num único CLI local.",
+    "tecnologias": [
+      "Python 3.11",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "pytest"
+    ],
+    "conceitos": [
+      "orquestração",
+      "laboratório",
+      "reprodutibilidade"
+    ],
+    "tipo_entrega": "CLI Python",
+    "aplicacao_empresarial": "Demonstração de um lab de DS numa máquina só.",
+    "dependencias_externas": "Nenhuma.",
+    "projeto_anterior": 91,
+    "status": "validado"
+  }
+]

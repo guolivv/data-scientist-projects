@@ -1,0 +1,30 @@
+"""Motor do projeto 073 — DBSCAN."""
+
+from __future__ import annotations
+
+import json
+import math
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+import pandas as pd
+
+def dump_json(path: Path, payload: dict[str, Any]) -> dict[str, Any]:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return payload
+
+from sklearn.cluster import DBSCAN
+from sklearn.preprocessing import StandardScaler
+
+def run(source: Path, destination: Path) -> dict[str, Any]:
+    x = StandardScaler().fit_transform(pd.read_csv(source))
+    model = DBSCAN(eps=0.6, min_samples=8).fit(x)
+    labels = model.labels_
+    payload = {
+        "n_clusters": int(len(set(labels)) - (1 if -1 in labels else 0)),
+        "n_ruido": int((labels == -1).sum()),
+        "tamanhos": pd.Series(labels).value_counts().sort_index().to_dict(),
+    }
+    return dump_json(destination, payload)
